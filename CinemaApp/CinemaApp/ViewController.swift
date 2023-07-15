@@ -10,19 +10,32 @@ import UIKit
 class ViewController: UIViewController {
 
     let idMovieCell = "movicell"
-    var movies: [Int] = [1,2,3]
+    var movies: [MovieModel] = []
+    let popularRepository = PopularRepository()
     @IBOutlet weak var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        
-
+        getPopularMovies()
     }
     
     func setupTableView(){
         let nib = UINib(nibName: "MovieTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: idMovieCell)
         tableView.dataSource = self
+    }
+    
+    func getPopularMovies(){
+        popularRepository.getPopular { movies in
+            DispatchQueue.main.async {
+                self.movies = movies
+                self.tableView.reloadData()
+            }
+        } onFailure: { error in
+            print(error)
+        }
     }
 }
 

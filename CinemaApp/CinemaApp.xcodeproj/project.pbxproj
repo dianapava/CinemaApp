@@ -15,6 +15,11 @@
 		D22EDE332A6340370098DE1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22EDE312A6340370098DE1B /* LaunchScreen.storyboard */; };
 		D22EDE3C2A6342B90098DE1B /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22EDE3A2A6342B90098DE1B /* MovieTableViewCell.swift */; };
 		D22EDE3D2A6342B90098DE1B /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22EDE3B2A6342B90098DE1B /* MovieTableViewCell.xib */; };
+		D2527C122A634A0F0099ECB8 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2527C112A634A0F0099ECB8 /* Client.swift */; };
+		D2527C142A6350CE0099ECB8 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2527C132A6350CD0099ECB8 /* MovieModel.swift */; };
+		D2527C172A6352550099ECB8 /* PopularRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2527C162A6352550099ECB8 /* PopularRepository.swift */; };
+		D2527C192A6352870099ECB8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2527C182A6352870099ECB8 /* Repository.swift */; };
+		D2527C1B2A6357410099ECB8 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2527C1A2A6357410099ECB8 /* MovieResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		D22EDE342A6340370098DE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D22EDE3A2A6342B90098DE1B /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		D22EDE3B2A6342B90098DE1B /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		D2527C112A634A0F0099ECB8 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		D2527C132A6350CD0099ECB8 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		D2527C162A6352550099ECB8 /* PopularRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularRepository.swift; sourceTree = "<group>"; };
+		D2527C182A6352870099ECB8 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		D2527C1A2A6357410099ECB8 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 		D22EDE252A6340360098DE1B /* CinemaApp */ = {
 			isa = PBXGroup;
 			children = (
+				D2527C152A6352370099ECB8 /* Repositories */,
+				D2527C102A6349F50099ECB8 /* Client */,
 				D22EDE3E2A6342C20098DE1B /* Home */,
 				D22EDE262A6340360098DE1B /* AppDelegate.swift */,
 				D22EDE282A6340360098DE1B /* SceneDelegate.swift */,
@@ -79,6 +91,25 @@
 				D22EDE3B2A6342B90098DE1B /* MovieTableViewCell.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		D2527C102A6349F50099ECB8 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				D2527C112A634A0F0099ECB8 /* Client.swift */,
+				D2527C132A6350CD0099ECB8 /* MovieModel.swift */,
+				D2527C1A2A6357410099ECB8 /* MovieResponse.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		D2527C152A6352370099ECB8 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D2527C162A6352550099ECB8 /* PopularRepository.swift */,
+				D2527C182A6352870099ECB8 /* Repository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2527C142A6350CE0099ECB8 /* MovieModel.swift in Sources */,
 				D22EDE2B2A6340360098DE1B /* ViewController.swift in Sources */,
+				D2527C172A6352550099ECB8 /* PopularRepository.swift in Sources */,
+				D2527C192A6352870099ECB8 /* Repository.swift in Sources */,
 				D22EDE272A6340360098DE1B /* AppDelegate.swift in Sources */,
 				D22EDE3C2A6342B90098DE1B /* MovieTableViewCell.swift in Sources */,
+				D2527C1B2A6357410099ECB8 /* MovieResponse.swift in Sources */,
+				D2527C122A634A0F0099ECB8 /* Client.swift in Sources */,
 				D22EDE292A6340360098DE1B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
