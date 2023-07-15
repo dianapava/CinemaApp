@@ -13,6 +13,8 @@
 		D22EDE2E2A6340360098DE1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22EDE2C2A6340360098DE1B /* Main.storyboard */; };
 		D22EDE302A6340370098DE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D22EDE2F2A6340370098DE1B /* Assets.xcassets */; };
 		D22EDE332A6340370098DE1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22EDE312A6340370098DE1B /* LaunchScreen.storyboard */; };
+		D22EDE3C2A6342B90098DE1B /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22EDE3A2A6342B90098DE1B /* MovieTableViewCell.swift */; };
+		D22EDE3D2A6342B90098DE1B /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22EDE3B2A6342B90098DE1B /* MovieTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D22EDE2F2A6340370098DE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D22EDE322A6340370098DE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D22EDE342A6340370098DE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D22EDE3A2A6342B90098DE1B /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		D22EDE3B2A6342B90098DE1B /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		D22EDE252A6340360098DE1B /* CinemaApp */ = {
 			isa = PBXGroup;
 			children = (
+				D22EDE3E2A6342C20098DE1B /* Home */,
 				D22EDE262A6340360098DE1B /* AppDelegate.swift */,
 				D22EDE282A6340360098DE1B /* SceneDelegate.swift */,
 				D22EDE2A2A6340360098DE1B /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				D22EDE342A6340370098DE1B /* Info.plist */,
 			);
 			path = CinemaApp;
+			sourceTree = "<group>";
+		};
+		D22EDE3E2A6342C20098DE1B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D22EDE3A2A6342B90098DE1B /* MovieTableViewCell.swift */,
+				D22EDE3B2A6342B90098DE1B /* MovieTableViewCell.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +141,7 @@
 			files = (
 				D22EDE332A6340370098DE1B /* LaunchScreen.storyboard in Resources */,
 				D22EDE302A6340370098DE1B /* Assets.xcassets in Resources */,
+				D22EDE3D2A6342B90098DE1B /* MovieTableViewCell.xib in Resources */,
 				D22EDE2E2A6340360098DE1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +155,7 @@
 			files = (
 				D22EDE2B2A6340360098DE1B /* ViewController.swift in Sources */,
 				D22EDE272A6340360098DE1B /* AppDelegate.swift in Sources */,
+				D22EDE3C2A6342B90098DE1B /* MovieTableViewCell.swift in Sources */,
 				D22EDE292A6340360098DE1B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
