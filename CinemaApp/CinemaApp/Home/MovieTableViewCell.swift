@@ -16,5 +16,8 @@ class MovieTableViewCell: UITableViewCell {
         // Initialization code
     }
 
+    func set(data: MovieModel){
+        movieTitleLabel.text = data.original_title
+    }
 
 }

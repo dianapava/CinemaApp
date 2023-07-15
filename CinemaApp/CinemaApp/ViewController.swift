@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     func setupTableView(){
         let nib = UINib(nibName: "MovieTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: idMovieCell)
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.dataSource = self
     }
     
@@ -48,6 +49,7 @@ extension ViewController: UITableViewDataSource{
         guard let cell = tableView.dequeueReusableCell(withIdentifier: idMovieCell, for: indexPath) as? MovieTableViewCell else{
             return UITableViewCell()
         }
+        cell.set(data: movies[indexPath.row])
         return cell
     }
     
